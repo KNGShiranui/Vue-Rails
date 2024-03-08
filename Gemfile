@@ -15,6 +15,9 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", require: false
 gem "sassc-rails"
 gem 'devise'
+
+# Vue.js関連
+gem 'vite_rails'
 gem 'jsbundling-rails'
 
 
