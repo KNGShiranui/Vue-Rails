@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :tasks
   resources :tops, only: %i(index)
   resources :users
   devise_for :users, controllers: {
