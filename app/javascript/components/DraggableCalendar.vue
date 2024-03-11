@@ -39,7 +39,7 @@ export default {
   },
   methods: {
     fetchTasks() {
-      axios.get('/api/tasks')
+      axios.get('/api/v1/tasks')
         .then(response => {
           // この例では、APIから取得したタスクをそのまま `tasks` に設定していますが、
           // 必要に応じて `tasks` のデータ構造を調整してください。
