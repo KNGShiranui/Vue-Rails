@@ -15,6 +15,7 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", require: false
 gem "sassc-rails"
 gem 'devise'
+gem 'simple_calendar'
 
 # Vue.js関連
 gem 'vite_rails'
@@ -32,6 +33,9 @@ end
 
 group :development do
   gem "web-console"
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'pry-rails'
   # gem "rack-mini-profiler"
   # gem "spring"
 end
