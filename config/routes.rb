@@ -11,7 +11,11 @@ Rails.application.routes.draw do
   
   resources :tops, only: %i(index)
   resources :users, only: %i(index show)
-  resources :tasks
+  resources :tasks do
+    collection do
+      get 'my_index', as: :my
+    end
+  end
   namespace :api do
     namespace :v1 do
       resources :tasks, only: %i(index create update destroy)

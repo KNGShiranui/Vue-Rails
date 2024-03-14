@@ -11,8 +11,9 @@
       <li><%= link_to 'ログイン', new_user_session_path %></li>
     <% end %>
     <% if current_user %>
+      <li><%= link_to '新規タスク', new_task_path %></li>    
       <li><%= link_to '全てのタスク', tasks_path %></li>
-      <li><%= link_to '自分のタスク', tasks_path %></li>
+      <li><%= link_to '自分のタスク', my_tasks_path %></li>
     <% end %>
   </ul>
 </div>
